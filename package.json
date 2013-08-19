@@ -1,0 +1,33 @@
+{
+  "name": "fast-noise",
+  "version": "0.1.0",
+  "description": "Fast noise functions for Node.JS",
+  "main": "build/Release/noise.node",
+  "scripts": {
+    "test": "mocha -R spec",
+    "install": "node-gyp rebuild"
+  },
+  "keywords": [
+    "fast",
+    "noise",
+    "function",
+    "fast-noise",
+    "procedural",
+    "generation",
+    "generator",
+    "generate",
+    "1d",
+    "2d",
+    "3d"
+  ],
+  "author": {
+    "name": "Bence Kiglics",
+    "email": "bence@kiglics.hu"
+  },
+  "license": "MIT",
+  "gypfile": true,
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "mocha": "~1.12.0"
+  }
+}

@@ -25,6 +25,10 @@
     "email": "bence@kiglics.hu"
   },
   "license": "MIT",
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/kbence/fast-noise.git"
+  },
   "gypfile": true,
   "readmeFilename": "README.md",
   "devDependencies": {

@@ -13,26 +13,6 @@ describe("noise", function() {
             assert.notEqual(noise.noise1(43645, 75857), noise.noise1(43646, 75857));
             assert.notEqual(noise.noise1(43645, 75857), noise.noise1(43645, 75858));
         });
-
-        it("should have a uniform distribution of bits", function() {
-            var result;
-            var dist = [];
-            var i, b;
-
-            for (b = 0; b < 32; b++) {
-                dist.push(0);
-            }
-
-            for (i = 0; i < 1000000; i++) {
-                result = noise.noise1(i, 0);
-
-                for (b = 0; b < 32; b++, result >>= 1) {
-                    (result & 1) && dist[b]++;
-                }
-            }
-
-            console.log(dist)
-        });
     });
 
     describe("#noise2()", function() {

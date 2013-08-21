@@ -26,7 +26,7 @@ int noiseImpl(int x, int y, int z, int seed)
 
    n = (n >> 13) ^ n;
 
-   return (n * (n * n * 60493 + 19990303) + 1376312589);// & 0x7fffffff;
+   return (n * (n * n * 60493 + 19990303) + 1376312589) & 0x7fffffff;
 }
 
 Handle<Value> noise1(const Arguments& args)

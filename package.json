@@ -1,6 +1,6 @@
 {
   "name": "fast-noise",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fast noise functions for Node.JS",
   "main": "build/Release/noise.node",
   "scripts": {

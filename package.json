@@ -2,7 +2,7 @@
   "name": "fast-noise",
   "version": "0.1.2",
   "description": "Fast noise functions for Node.JS",
-  "main": "build/Release/noise.node",
+  "main": "src/noise.js",
   "scripts": {
     "test": "mocha -R spec",
     "install": "node-gyp rebuild"

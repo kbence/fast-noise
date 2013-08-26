@@ -1,5 +1,6 @@
 #include <v8.h>
 #include <node.h>
+#include <math.h>
 
 #define REQ_INT_ARG(I, VAR)                                             \
   int VAR;                                                              \
@@ -88,7 +89,7 @@ Handle<Value> doubleNoise1(const Arguments& args)
 	REQ_INT_ARG(0, seed);
 	REQ_DOUBLE_ARG(1, x);
 
-	int ix = (int)x;
+	int ix = (int)floor(x);
 	double fx = x - ix;
 
 	double result = lerp(
@@ -108,7 +109,7 @@ Handle<Value> doubleNoise2(const Arguments& args)
 	REQ_DOUBLE_ARG(1, x);
 	REQ_DOUBLE_ARG(2, y);
 
-	int ix = (int)x, iy = (int)y;
+	int ix = (int)floor(x), iy = (int)floor(y);
 	double fx = x - ix, fy = y - iy;
 
 	double result = lerp(
@@ -137,7 +138,7 @@ Handle<Value> doubleNoise3(const Arguments& args)
 	REQ_DOUBLE_ARG(2, y);
 	REQ_DOUBLE_ARG(3, z);
 
-	int ix = (int)x, iy = (int)y, iz = (int)z;
+	int ix = (int)floor(x), iy = (int)floor(y), iz = (int)floor(z);
 	double fx = x - ix, fy = y - iy, fz = z - iz;
 
 	double result = lerp(

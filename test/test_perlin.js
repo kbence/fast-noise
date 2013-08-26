@@ -35,7 +35,7 @@ describe("PerlinNoise", function() {
             for (var x = 0; x < 30; x++) {
                 for (var y = 0; y < 30; y++) {
                     for (var z = 0; z < 30; z++) {
-                        value = perlin.get(x/5, y/5, z/5);
+                        value = perlin.get(x/5 - 1000, y/5 - 1000, z/5 - 1000);
 
                         assert(value >= 0.0, value + " >= 0.0");
                         assert(value <= 1.0, value + " <= 1.0");

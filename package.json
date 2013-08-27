@@ -26,12 +26,13 @@
   },
   "license": "MIT",
   "repository": {
-      "type": "git",
-      "url": "git://github.com/kbence/fast-noise.git"
+    "type": "git",
+    "url": "git://github.com/kbence/fast-noise.git"
   },
   "gypfile": true,
   "readmeFilename": "README.md",
   "devDependencies": {
-    "mocha": "~1.12.0"
+    "mocha": "~1.12.0",
+    "node-gd": "~0.2.3"
   }
 }
